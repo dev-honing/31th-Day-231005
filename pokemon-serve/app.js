@@ -1,7 +1,7 @@
 const http = require("http");
 
 const server = http.createServer(function (request, response) {
-  console.log(typeof response);
+  console.log(request.url);
 
   response.writeHead(200, { "Content-Type": "text/html" });
   // html의 구성을 doc로 변수 선언
