@@ -25,18 +25,30 @@ const server = http.createServer(function (request, response) {
     #root {
       width: 100vw;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    #root div {
+      display: flex;
+      align-items: center;
+      border: #000 solid 3px;
+      border-radius: 5%;
+      width: 30vw;
+      height: 3vh;
     }
     #root > div:nth-child(1) {
-      background-color : yellow;
+      background-color : #FFD733;
     }
     #root > div:nth-child(2) {
-      background-color : yellow;
+      background-color : #FFD733;
     }
     #root > div:nth-child(3) {
-      background-color: red;
+      background-color: #FF7327;
     }
     #root > div:nth-child(4) {
-      background-color : blue;
+      background-color : #4FD9FF;
     }
 
     </style>
