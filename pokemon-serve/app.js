@@ -4,8 +4,14 @@ const server = http.createServer(function (request, response) {
   console.log(typeof response);
 
   response.writeHead(200, { "Content-Type": "text/html" });
-  response.end("안녕!");
+  // html의 구성을 doc로 변수 선언
+  let doc = `<html>
+      <head></head>
+      <body>
+        <h1>hello!</h1>
+      </body>
+    </html>`;
+  response.end(doc); //html 요소가 출력되는지 확인
 });
 
 server.listen(1234);
-// localhost:1234로 접속하면 �덈뀞!이 출력됨;
