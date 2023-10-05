@@ -30,10 +30,18 @@ const server = http.createServer(function (request, response) {
     </head>
     <body>
       <div id="root">
-      <a href="http://localhost:1234/1">피카츄</a>
-      <a href="http://localhost:1234/2">라이츄</a>
-      <a href="http://localhost:1234/3">파이리</a>
-      <a href="http://localhost:1234/4">꼬부기</a>
+        <div>
+          <a href="http://localhost:1234/1">피카츄</a>
+        </div>
+        <div>
+          <a href="http://localhost:1234/2">라이츄</a>
+        </div>
+        <div>
+          <a href="http://localhost:1234/3">파이리</a>
+        </div>
+        <div>
+          <a href="http://localhost:1234/4">꼬부기</a>
+        </div>
       </div>
     </body>
     </html>`;
