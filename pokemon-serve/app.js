@@ -17,12 +17,16 @@ const server = http.createServer(function (request, response) {
     const mainPage = `<html>
     <head>
     <meta charset="UTF-8">
-    <title>메인</title></head>
+    <title>메인</title>
+    
+    </head>
     <body>
+      <div id="root">
       <a href="http://localhost:1234/1">피카츄</a>
       <a href="http://localhost:1234/2">라이츄</a>
       <a href="http://localhost:1234/3">파이리</a>
       <a href="http://localhost:1234/4">꼬부기</a>
+      </div>
     </body>
     </html>`;
     response.end(mainPage);
