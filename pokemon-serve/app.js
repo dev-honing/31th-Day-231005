@@ -11,7 +11,8 @@ const server = http.createServer(function (request, response) {
         <h1>hello!</h1>
       </body>
     </html>`;
-  response.end(doc); //html 요소가 출력되는지 확인
+
+  response.end(doc);
 });
 
 server.listen(1234);
