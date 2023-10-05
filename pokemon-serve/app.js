@@ -26,6 +26,19 @@ const server = http.createServer(function (request, response) {
       width: 100vw;
       height: 100vh;
     }
+    #root > div:nth-child(1) {
+      background-color : yellow;
+    }
+    #root > div:nth-child(2) {
+      background-color : yellow;
+    }
+    #root > div:nth-child(3) {
+      background-color: red;
+    }
+    #root > div:nth-child(4) {
+      background-color : blue;
+    }
+
     </style>
     </head>
     <body>
