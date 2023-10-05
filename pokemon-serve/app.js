@@ -25,9 +25,9 @@ const server = http.createServer(function (request, response) {
     const pagePikachu = `<html>
     <head><title>Pikachu</title></head>
     <body>
+      <h1>Pikachu</h1>
       <a href="http://localhost:1234/0">Previous</a>
       <a href="http://localhost:1234/2">Next</a>
-      <h1>Pikachu</h1>
     </body>
     </html>`;
     response.end(pagePikachu);
@@ -37,9 +37,9 @@ const server = http.createServer(function (request, response) {
     const pageRaichu = `<html>
     <head><title>Raichu</title></head>
     <body>
+      <h1>Raichu</h1>
       <a href="http://localhost:1234/1">Previous</a> 
       <a href="http://localhost:1234/3">Next</a> 
-      <h1>Raichu</h1>
     </body>
     </html>`;
     response.end(pageRaichu);
@@ -49,9 +49,9 @@ const server = http.createServer(function (request, response) {
     const pageCharmander = `<html>
     <head><title>Charmander</title></head>
     <body>
+      <h1>Charmander</h1>
       <a href="http://localhost:1234/2">Previous</a> 
       <a href="http://localhost:1234/4">Next</a> 
-      <h1>Charmander</h1>
     </body>
     </html>`;
     response.end(pageCharmander);
@@ -61,9 +61,9 @@ const server = http.createServer(function (request, response) {
     const pageSquirtle = `<html>
     <head><title>Squirtle</title></head>
     <body>
+      <h1>Squirtle</h1>
       <a href="http://localhost:1234/3">Previous</a> 
       <a href="http://localhost:1234/5">Next</a> 
-      <h1>Squirtle</h1>
     </body>
     </html>`;
     response.end(pageSquirtle);
