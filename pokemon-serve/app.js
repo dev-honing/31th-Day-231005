@@ -18,7 +18,15 @@ const server = http.createServer(function (request, response) {
     <head>
     <meta charset="UTF-8">
     <title>메인</title>
-    
+    <style>
+    *{margin: 0;
+      padding: 0;
+    }
+    #root {
+      width: 100vw;
+      height: 100vh;
+    }
+    </style>
     </head>
     <body>
       <div id="root">
