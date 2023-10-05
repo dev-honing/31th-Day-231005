@@ -14,26 +14,26 @@ const server = http.createServer(function (request, response) {
   // 조건문 작성을 통한 응답을 2가지로 만들어 멀티 페이지 구성
   // 메인페이지
   if (request.url === "/") {
-    response.end(`<html>
-      <head></head>
-      <body>
-        <h1>Main Page</h1>
-      </body>
-    </html>`);
+    const mainPage = `<html>
+    <head></head>
+    <body>
+      <h1>Main Page</h1>
+    </body>
+  </html>`;
+    response.end(mainPage);
   }
   // 서브페이지
   if (request.url === "/sub") {
-    response.end(`<html>
-      <head></head>
-      <body>
-        <h1>Sub Page</h1>
-      </body>
-    </html>`);
+    const subPage = `<html>
+    <head></head>
+    <body>
+      <h1>Sub Page</h1>
+    </body>
+  </html>`;
+    response.end(subPage);
   }
 
   response.writeHead(200, { "Content-Type": "text/html" });
-
-  // response.end(doc);
 });
 
 server.listen(1234);
