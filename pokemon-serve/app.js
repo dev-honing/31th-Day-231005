@@ -18,6 +18,10 @@ const server = http.createServer(function (request, response) {
     <head><title>Main</title></head>
     <body>
       <h1>Main</h1>
+      <a href="http://localhost:1234/1">Pikachu</a>
+      <a href="http://localhost:1234/2">Raichu</a>
+      <a href="http://localhost:1234/3">Charmander</a>
+      <a href="http://localhost:1234/4">Squirtle</a>
     </body>
     </html>`;
     response.end(mainPage);
