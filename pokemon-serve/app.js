@@ -8,3 +8,4 @@ const server = http.createServer(function (request, response) {
 });
 
 server.listen(1234);
+// localhost:1234로 접속하면 �덈뀞!이 출력됨;
