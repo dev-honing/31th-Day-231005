@@ -1,3 +1,11 @@
+// 포켓몬 데이터 (피카츄~꼬부기까지만) 배열로 작성
+const pokemonArr = {
+  0: "main",
+  1: "pikachu",
+  2: "raichu",
+  3: "Charmander",
+  4: "Squirtle",
+};
 const http = require("http");
 
 const server = http.createServer(function (request, response) {
