@@ -63,7 +63,7 @@ const server = http.createServer(function (request, response) {
     <body>
       <h1>Squirtle</h1>
       <a href="http://localhost:1234/3">Previous</a> 
-      <a href="http://localhost:1234/5">Next</a> 
+      <a href="http://localhost:1234/0">Next</a> 
     </body>
     </html>`;
     response.end(pageSquirtle);
@@ -71,21 +71,21 @@ const server = http.createServer(function (request, response) {
   // 이전/다음 페이지가 없는 경우를 조건식으로 작성 -> 메인 페이지로 이동
   //! -> 실패해서 주석처리
   // if (response.writeHead(404)) {}
-
-  //
-  if ((response.statusCode = 404)) {
-    const response404 = `<html>
-    <head></head>
-    <body>
-      <script>
-      window.location.href = "http://localhost:1234/0";
-      </script>
-    </body>
-    </html>`;
-    response.end(response404);
-  } else {
-    response.writeHead(200, { "Content-Type": "text/html" });
-  }
+  // ContentType 객체를 변수 선언
+  // const ContentType = { "Content-Type": "text/html" };
+  // if (response.statusCode === 200) {
+  //   response.writeHead(200, ContentType);
+  // } else {
+  //   const response404 = `<html>
+  //       <head></head>
+  //       <body>
+  //         <script>
+  //         window.location.href = "http://localhost:1234/0";
+  //         </script>
+  //       </body>
+  //       </html>`;
+  //   response.end(response404);
+  // }
 });
 
 server.listen(1234);
