@@ -15,13 +15,14 @@ const server = http.createServer(function (request, response) {
   // index 0번 메인 페이지
   if (request.url === "/0") {
     const mainPage = `<html>
-    <head><title>Main</title></head>
+    <head>
+    <meta charset="UTF-8">
+    <title>메인</title></head>
     <body>
-      <h1>Main</h1>
-      <a href="http://localhost:1234/1">Pikachu</a>
-      <a href="http://localhost:1234/2">Raichu</a>
-      <a href="http://localhost:1234/3">Charmander</a>
-      <a href="http://localhost:1234/4">Squirtle</a>
+      <a href="http://localhost:1234/1">피카츄</a>
+      <a href="http://localhost:1234/2">라이츄</a>
+      <a href="http://localhost:1234/3">파이리</a>
+      <a href="http://localhost:1234/4">꼬부기</a>
     </body>
     </html>`;
     response.end(mainPage);
@@ -29,9 +30,11 @@ const server = http.createServer(function (request, response) {
   // index 1번 피카츄 페이지
   if (request.url === "/1") {
     const pagePikachu = `<html>
-    <head><title>Pikachu</title></head>
+    <head>
+    <meta charset="UTF-8">
+    <title>피카츄</title></head>
     <body>
-      <h1>Pikachu</h1>
+      <h1>피카츄</h1>
       <a href="http://localhost:1234/0">Previous</a>
       <a href="http://localhost:1234/2">Next</a>
     </body>
@@ -41,9 +44,11 @@ const server = http.createServer(function (request, response) {
   // index 2번 라이츄 페이지
   if (request.url === "/2") {
     const pageRaichu = `<html>
-    <head><title>Raichu</title></head>
+    <head>
+    <meta charset="UTF-8">
+    <title>라이츄</title></head>
     <body>
-      <h1>Raichu</h1>
+      <h1>라이츄</h1>
       <a href="http://localhost:1234/1">Previous</a> 
       <a href="http://localhost:1234/3">Next</a> 
     </body>
@@ -53,9 +58,11 @@ const server = http.createServer(function (request, response) {
   // index 3번 파이리 페이지
   if (request.url === "/3") {
     const pageCharmander = `<html>
-    <head><title>Charmander</title></head>
+    <head>
+    <meta charset="UTF-8">
+    <title>파이리</title></head>
     <body>
-      <h1>Charmander</h1>
+      <h1>파이리</h1>
       <a href="http://localhost:1234/2">Previous</a> 
       <a href="http://localhost:1234/4">Next</a> 
     </body>
@@ -65,9 +72,11 @@ const server = http.createServer(function (request, response) {
   // index 4번 꼬부기 페이지
   if (request.url === "/4") {
     const pageSquirtle = `<html>
-    <head><title>Squirtle</title></head>
+    <head>
+    <meta charset="UTF-8">
+    <title>꼬부기</title></head>
     <body>
-      <h1>Squirtle</h1>
+      <h1>꼬부기</h1>
       <a href="http://localhost:1234/3">Previous</a> 
       <a href="http://localhost:1234/0">Next</a> 
     </body>
