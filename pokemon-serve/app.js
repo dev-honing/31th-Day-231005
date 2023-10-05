@@ -70,19 +70,22 @@ const server = http.createServer(function (request, response) {
   }
   // 이전/다음 페이지가 없는 경우를 조건식으로 작성 -> 메인 페이지로 이동
   //! -> 실패해서 주석처리
-  // if (response.writeHead(404)) {
-  //   const response404 = `<html>
-  // <head></head>
-  // <body>
-  //   <script>
-  //   window.location.href = "http://localhost:1234/0";
-  //   </script>
-  // </body>
-  // </html>`;
-  //   response.end(response404);
-  // }
+  // if (response.writeHead(404)) {}
 
-  response.writeHead(200, { "Content-Type": "text/html" });
+  //
+  if ((response.statusCode = 404)) {
+    const response404 = `<html>
+    <head></head>
+    <body>
+      <script>
+      window.location.href = "http://localhost:1234/0";
+      </script>
+    </body>
+    </html>`;
+    response.end(response404);
+  } else {
+    response.writeHead(200, { "Content-Type": "text/html" });
+  }
 });
 
 server.listen(1234);
