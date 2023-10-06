@@ -37,7 +37,9 @@ const server = http.createServer(function (request, response) {
       border-radius: 5%;
       width: 30vw;
       height: 3vh;
+      justify-content: center;
     }
+    
     #root > div:nth-child(1) {
       background-color : #FFD733;
     }
@@ -50,7 +52,6 @@ const server = http.createServer(function (request, response) {
     #root > div:nth-child(4) {
       background-color : #4FD9FF;
     }
-
     </style>
     </head>
     <body>
